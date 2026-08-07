@@ -1,0 +1,6 @@
+# Ignore all R scripts
+*.R
+*.r
+
+# But do not ignore the main script
+!analyse tp1 SOL ATM.R

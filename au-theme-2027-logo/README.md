@@ -2,6 +2,14 @@
 
 « *AU at the Dawn of its 25th Anniversary: Leveraging the Full Potential of SAATM and New Technologies for Continental Integration* »
 
+## V3 — « L'Arche d'Intégration » (réalisée d'après votre brief) → dossier `V3_arche/`
+
+![Arche](V3_arche/png/planche_presentation_3000px.png)
+
+Une arche épaisse qui monte vers la droite (le pont des 25 ans et ses deux points d'ancrage). Elle est traversée par une trajectoire or effilée, à la fois vol et flux de données, avec une pointe rouge. Un point de connexion vert marque le croisement. Le symbole est placé au-dessus d'un wordmark Montserrat bleu.
+Variantes : couleur, monochrome, inversé blanc, inversé couleur, horizontale et verticale, 6 langues, 4 maquettes.
+Le monochrome n'utilise **pas de trames** : l'arche est découpée en réserve autour de la trajectoire et du point, par opération booléenne. Elle reste donc lisible en une seule couleur.
+
 ## ★ V2 — « Envol » (piste principale recommandée) → dossier `V2_envol/`
 
 ![Envol](V2_envol/png/planche_presentation_3000px.png)
@@ -105,7 +113,8 @@ Un **« A »** (Afrique, Union africaine) dessiné comme une **piste d'envol vue
 pip install cairosvg fonttools uharfbuzz
 # placer Montserrat-{500,600,700,800}.ttf et NotoKufiArabic-{500,700}.ttf dans source/fonts/
 # (instances statiques des polices variables Google Fonts)
-python3 source/build.py && python3 source/mockups.py && python3 source/v2.py
+python3 source/build.py && python3 source/mockups.py && python3 source/v2.py && python3 source/v3.py
+pip install shapely  # requis pour v3
 ```
 
 La géométrie des trois symboles se trouve dans `source/marks.py`.

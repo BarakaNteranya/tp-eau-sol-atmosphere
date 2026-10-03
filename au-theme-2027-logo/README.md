@@ -2,6 +2,29 @@
 
 « *AU at the Dawn of its 25th Anniversary: Leveraging the Full Potential of SAATM and New Technologies for Continental Integration* »
 
+## ★ V2 — « Envol » (piste principale recommandée) → dossier `V2_envol/`
+
+![Envol](V2_envol/png/planche_presentation_3000px.png)
+
+**L'idée** : une jeune Africaine ou un jeune Africain lève les bras, et ces bras deviennent des ailes. La tête est le soleil de l'aube. En un seul signe, on lit **une personne**, **un oiseau** et **un lever de soleil**.
+
+| Élément | Ce qu'il signifie |
+|---|---|
+| Bras levés | Jeunesse, fierté, victoire, une Afrique « portée par ses citoyens » |
+| Ailes | SAATM et ciel ouvert : les oiseaux traversent le continent sans frontières. On évoque le vol **sans dessiner d'avion** |
+| Soleil-tête doré | « À l'aube du 25e anniversaire », et une nouvelle ère |
+| Plumes en chevrons | Motif présent dans les textiles, la vannerie et l'architecture de **toutes** les régions d'Afrique, sans en privilégier une |
+| Plumes qui deviennent pixels | Le patrimoine qui devient technologie : IA, numérique, innovation menée par l'Afrique |
+| Six bandes, cinq couleurs, une seule figure | Les régions rassemblées en un seul corps : l'intégration continentale |
+
+**Système** : un titre officiel hiérarchisé (« **2027** THEME OF THE YEAR », puis le thème complet), un motif « plumes-chevrons » pour les fonds, une version chaude sur fond or et une version simplifiée sans pixels pour les tailles sous 32 px (`mark_small-sizes.svg`).
+**Maquettes** : toile de fond d'événement, bannière web (même format que celle de 2025), carte numérique et couverture A4.
+**Langues** : EN, FR, PT, ES, SW et AR, avec l'arabe en mise en page de droite à gauche.
+
+---
+
+## Premières pistes (V1)
+
 Trois pistes vectorielles, chacune déclinée en couleur, monochrome et inversé, avec planche de présentation, adaptation multilingue et trois maquettes.
 
 ![Aperçu](apercu_3_pistes.png)
@@ -82,7 +105,7 @@ Un **« A »** (Afrique, Union africaine) dessiné comme une **piste d'envol vue
 pip install cairosvg fonttools uharfbuzz
 # placer Montserrat-{500,600,700,800}.ttf et NotoKufiArabic-{500,700}.ttf dans source/fonts/
 # (instances statiques des polices variables Google Fonts)
-python3 source/build.py && python3 source/mockups.py
+python3 source/build.py && python3 source/mockups.py && python3 source/v2.py
 ```
 
 La géométrie des trois symboles se trouve dans `source/marks.py`.
